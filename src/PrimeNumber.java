@@ -1,3 +1,4 @@
+/*
 public class PrimeNumber {
     private long lastPrimeNumber = 0L;
 
@@ -47,3 +48,4 @@ public class PrimeNumber {
         this.lastPrimeNumber = lastPrimeNumber;
     }
 }
+*/

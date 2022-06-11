@@ -3,8 +3,8 @@ package priorityqueue;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-
-public class Student {
+/*
+class Student {
     private int id;
     private String name;
     private double CGPA;
@@ -40,7 +40,7 @@ public class Student {
     }
 }
 
-public class Priorities {
+class Priorities {
     private List<Student> getStudents(List<String> events) {
         return null;
     }
@@ -70,3 +70,4 @@ public class Solution {
         }
     }
 }
+*/
