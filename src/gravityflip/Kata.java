@@ -1,9 +1,12 @@
 package gravityflip;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class Kata {
 
     //bubble sort algorithm
-    public static int[] flip(char dir, int[] arr) {
+    public static int[] flipWithBubbleSort(char dir, int[] arr) {
         //arr = 3,2,1,2
         int len = arr.length;
         for(int i=0; i<len-1; i++) {
@@ -28,4 +31,20 @@ public class Kata {
 
         return arr;
     }
+
+    public static int[] flipWithStream(char dir, int[] arr) {
+        if(dir=='L') {
+            return Arrays.stream(arr)
+                .boxed()
+                .sorted(Collections.reverseOrder())
+                //.sorted(dir=='L'?(a,b)->a-b: (a,b)->b-a)
+                .mapToInt(Integer::intValue)
+                .toArray();
+        }
+        else {
+            Arrays.sort(arr);
+        }
+        return arr;
+    }
+
 }
